@@ -1,0 +1,15 @@
+﻿global using FunTextLibrary.DataAccess;
+global using FunTextLibrary.Interfaces;
+global using FunTextLibrary.Models;
+global using FunTextMVC;
+global using FunTextMVC.Data;
+global using FunTextMVC.Models;
+global using FunTextMVC.ViewModels;
+global using Microsoft.AspNetCore.Authorization;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore;
+global using Serilog;
+global using System.ComponentModel.DataAnnotations;
+global using System.Diagnostics;

@@ -1,8 +1,25 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using FunTextMVC.Views.BlazorComponents
+@{
+    ViewData["Title"] = "Translate";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<partial name="_Notification" />
+
+<div class="m-5">
+
+    <div>
+        <div class="pt-5 text-center">
+            <h1 class="display-1 text-info-emphasis">Welcome To Fun Text</h1>
+            <h5 class="display-6 text-capitalize text-success-emphasis fw-semibold">Translations made fun.</h5>
+        </div>
+
+        <div>
+
+            @* Gets and renders the blazor component for display in view. *@
+            @(await Html.RenderComponentAsync<TranslateComponent>(RenderMode.Server))
+
+        </div>
+
+    </div>
+
 </div>
